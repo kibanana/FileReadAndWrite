@@ -68,7 +68,7 @@
             // 
             // openFileDlg
             // 
-            this.openFileDlg.FileName = "텍스트 파일(*.txt)|*.txt|모든파일 (*.*)|*.*";
+            this.openFileDlg.Filter = "텍스트 파일(*.txt)|*.txt|모든파일 (*.*)|*.*";
             // 
             // saveFileDlg
             // 
@@ -131,6 +131,7 @@
             this.btnReadText.TabIndex = 6;
             this.btnReadText.Text = "불러오기";
             this.btnReadText.UseVisualStyleBackColor = true;
+            this.btnReadText.Click += new System.EventHandler(this.BtnReadText_Click);
             // 
             // btnReadFileSelect
             // 
@@ -140,6 +141,7 @@
             this.btnReadFileSelect.TabIndex = 5;
             this.btnReadFileSelect.Text = "파일 선택";
             this.btnReadFileSelect.UseVisualStyleBackColor = true;
+            this.btnReadFileSelect.Click += new System.EventHandler(this.BtnReadFileSelect_Click);
             // 
             // txtReadFile
             // 
@@ -165,6 +167,7 @@
             this.btnWritefileSelect.TabIndex = 1;
             this.btnWritefileSelect.Text = "파일 선택";
             this.btnWritefileSelect.UseVisualStyleBackColor = true;
+            this.btnWritefileSelect.Click += new System.EventHandler(this.BtnWritefileSelect_Click);
             // 
             // btnWriteText
             // 
@@ -174,6 +177,7 @@
             this.btnWriteText.TabIndex = 2;
             this.btnWriteText.Text = "저장하기";
             this.btnWriteText.UseVisualStyleBackColor = true;
+            this.btnWriteText.Click += new System.EventHandler(this.BtnWriteText_Click);
             // 
             // txtWriteText
             // 
